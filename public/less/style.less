@@ -1,0 +1,112 @@
+:root {
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    // colour
+    --bs-blue: #1c84fe;
+    --bs-blue-gr: #766afb;
+    --box-primary-background: #21212d;
+    --box-secondary-background: #272733;
+    --border-primary: #121413;
+    --border-secondary: #0d6efd;
+    --text-primary: #c6c9d8;
+    --text-secondary: #5f5f6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5% /* makes 1rem 10px */
+}
+
+body {
+    font-size: 1.6em; /* default font of 16px */
+    font-family: 'Verdana', 'Arial', sans-serif;
+    line-height: 1.3;
+}
+
+div{
+    color: var(--bs-gray);
+}
+
+/* fonts */
+h1 {
+    font-size: 3rem;
+    color: var(--text-primary);
+}
+h2 {
+    font-size: 2.4rem;
+    color: var(--text-primary);
+}
+h3 {
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+
+h4,
+li,
+label,
+input,
+textarea,
+select,
+p {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+}
+h5 {
+    font-size: 1.6rem;
+    color: var(--text-primary);
+}
+h6 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+}
+ol,
+ul {
+    padding-left: 2em;
+}
+a {
+    text-decoration: none;
+    color: var(--bs-primary);
+}
+a:hover {
+    color: var(--bs-info);
+}
+a:focus {
+    color: var(--bs-cyan);
+}
+a:active {
+    color: var(--bs-blue);
+}
+a:visited {
+    color: var(--bs-purple);
+}
+
+@import "./components/home.less";
+@import "./components/header.less";
+@import "./components/banner.less";
+@import "./components/body.less";
+@import "./components/dashboard.less";
+@import "./components/box.less";
+@import "./components/time.less";
+@import "./components/footer.less";

@@ -1,0 +1,8 @@
+{
+    "less.compile": {
+        "main": "${workspaceFolder}/public/less/style.less",
+        "out": "${workspaceFolder}/public/css/style.css",
+        "sourceMap": true
+        
+    }
+}

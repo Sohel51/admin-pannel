@@ -1,0 +1,54 @@
+.dashboard {
+    .left-part {
+        width: 560px;
+        gap: 10px;
+
+        .boxes-left {
+            min-width: 290px;
+            display: grid;
+            gap: 16px;
+
+            .time {
+                min-height: 260px;
+            }
+
+            .box2 {
+                min-height: 260px;
+                background-color: var(--bs-gray-dark);
+            }
+
+            .box3 {
+                min-height: 100px;
+                gap: 16px;
+
+                .short-box {
+                    width: 83px;
+                    color: white;
+                    text-align: center;
+                    padding-top: 10px;
+
+                    .label {
+                        padding: 10px 0;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .boxes-right {
+            display: grid;
+            align-content: space-between;
+        }
+    }
+}
+
+.right-part {
+    width: 50%;
+
+    .short-links {
+        justify-content: center;
+        align-content: center;
+        gap: 16px;
+        height: 100%;
+    }
+}
