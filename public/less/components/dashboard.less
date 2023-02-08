@@ -10,6 +10,9 @@
 
             .time {
                 min-height: 260px;
+                display: grid;
+                align-content: center;
+                justify-content: center;
             }
 
             .box2 {
@@ -38,6 +41,14 @@
         .boxes-right {
             display: grid;
             align-content: space-between;
+
+            .box {
+                justify-content: center;
+                align-content: center;
+                display: grid;
+                gap: 50px;
+                grid-template-columns: repeat(2, 35px);
+            }
         }
     }
 }
@@ -50,5 +61,13 @@
         align-content: center;
         gap: 16px;
         height: 100%;
+
+        .box {
+            cursor: pointer;
+
+            .label {
+                padding-top: 10px;
+            }
+        }
     }
 }

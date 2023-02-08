@@ -6,7 +6,7 @@ const Time = () => {
         <div className="date text-center">
             <h3>2023-Jan-Fri</h3>
         </div>
-        <div className="time d-flex justify-content-center">
+        <div className="main_time d-flex justify-content-center">
             <div className="hour">
                 <h2>09</h2>
             </div>
