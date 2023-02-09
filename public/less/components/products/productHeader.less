@@ -1,0 +1,27 @@
+.product_heading_menu {
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        li {
+            font-size: 20px;
+            padding: 10px;
+
+            &:active{
+                border-bottom: 3px solid #ff3737ba;
+            }
+
+
+            a {
+                background: -webkit-linear-gradient(#e376cc, #46fdc4);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .active {
+            border-bottom: 3px solid #ff3737ba;
+        }
+    }
+}

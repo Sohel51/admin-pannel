@@ -1,3 +1,34 @@
-.product_details{
-    
+.product_details {
+    width: 100vw;
+    max-width: 1600px;
+    height: 770px;
+
+    .product_table_card {
+        padding: 0 15px;
+        height: 700px;
+        overflow: auto;
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 15px;
+
+            tr {
+                margin: 3px 0;
+                background: var(--gradient-v3);
+
+                th {
+                    padding: 15px;
+                    color: #eddada;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+
+                td {
+                    padding: 15px;
+                    color: white;
+                }
+            }
+        }
+    }
 }

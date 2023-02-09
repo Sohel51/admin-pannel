@@ -1,3 +1,4 @@
+// root var style
 :root {
     --bs-pink: #d63384;
     --bs-red: #dc3545;
@@ -7,7 +8,7 @@
     --bs-teal: #20c997;
     --bs-cyan: #0dcaf0;
     --bs-white: #fff;
-    --bs-gray: #6c757d;
+    --bs-gray: #d7d7d7c9;
     --bs-gray-dark: #343a40;
     --bs-primary: #0d6efd;
     --bs-secondary: #6c757d;
@@ -27,8 +28,36 @@
     --text-primary: #c6c9d8;
     --text-secondary: #5f5f6b;
     --app-width: 1200px;
+    // Gradient Colour
+    --gradient-v1: linear-gradient(135deg, #c72a4ca6 0%, rgba(59, 25, 57, 0.793) 94%);
+    --gradient-v2: linear-gradient(135deg, rgba(25, 27, 42, 0.95561975) 0%, rgba(44, 28, 55, 0.95281863) 100%);
+    --gradient-v3: linear-gradient(135deg, rgba(25, 27, 42, 0.95561975) 0%, rgba(15, 44, 60, 0.97242647) 100%);
+    --gradient-v4: linear-gradient(135deg, #181b2a 12%, rgba(22, 33, 48, 0.7567402) 49%, #132a38 100%);
+    --gradient-v5: linear-gradient(135deg, #a61eb8ad 0%, rgba(35, 19, 51, 0.793) 94%);
+    --gradient-v6: linear-gradient(135deg, #1e4b4b 0%, rgba(25, 42, 59, 0.79315476) 94%);
+    --gradient-v7: linear-gradient(135deg, rgba(27, 80, 134) 0%, rgba(25, 42, 59, 0.79315476) 94%);
+    --gradient-v8: linear-gradient(135deg, #18214b 0%, rgba(25, 42, 59, 0.79315476) 94%);
+    --gradient-v9: linear-gradient(135deg, rgba(25, 27, 42, 0.95842087) 0%, rgba(31, 30, 37, 0.91920518) 36%, rgba(60, 43, 20, 0.94721639) 100%);
 }
 
+// scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gradient-v7);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-v1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-v5);
+}
+
+// default style
 * {
     margin: 0;
     padding: 0;
@@ -38,11 +67,11 @@
 
 html {
     font-size: 62.5%
-        /* makes 1rem 10px */
 }
 
 #root {
     height: 100vh;
+    background: #00000057;
 }
 
 div {
@@ -73,7 +102,7 @@ textarea,
 select,
 p {
     font-size: 1.8rem;
-    color: var(--text-primary);
+    color: var(--bs-white);
     list-style: none;
 }
 
@@ -85,11 +114,6 @@ h5 {
 h6 {
     font-size: 1.4rem;
     color: var(--text-primary);
-}
-
-ol,
-ul {
-    padding-left: 2em;
 }
 
 a {
@@ -106,7 +130,7 @@ a:focus {
 }
 
 a:active {
-    color: var(--bs-blue);
+    // color: var(--bs-light);
 }
 
 a:visited {
@@ -125,3 +149,4 @@ a:visited {
 
 // Backend Manage Components
 @import "./components/products/product.less";
+@import "./components/products/productHeader.less";
