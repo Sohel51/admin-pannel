@@ -23,11 +23,11 @@ const Header = () => {
             <h3>User</h3>
           </div>
           <div className="menu-toggle">
-            <div class="dropdown">
-              <button class="dropbtn">
+            <div className="dropdown">
+              <button className="dropbtn">
                 <i data-eva="layers-outline" data-eva-fill="white" data-eva-height="40px" data-eva-width="40px"></i>
               </button>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <Link className='v1' to="/">Dashboard</Link>
                 <Link className='v2' to="/profile">Profile</Link>
                 <Link className='v3' to="/settings">Settings</Link>

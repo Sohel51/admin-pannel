@@ -51,6 +51,7 @@
 
 ::-webkit-scrollbar-thumb {
     background: var(--gradient-v1);
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -97,13 +98,31 @@ h3 {
 h4,
 li,
 label,
-input,
-textarea,
 select,
 p {
     font-size: 1.8rem;
     color: var(--bs-white);
     list-style: none;
+}
+
+input,
+textarea {
+    background: none;
+    width: 475px;
+    height: 50px;
+    border: 1px solid #c8614f75;
+    box-shadow: 0 0 3px #1670BE;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--bs-white);
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #1670BE;
+    box-shadow: 0 0 3px #1670BE;
+    outline-offset: 0px;
+    outline: none;
 }
 
 h5 {
@@ -148,5 +167,11 @@ a:visited {
 @import "./components/footer.less";
 
 // Backend Manage Components
+//Product
 @import "./components/products/product.less";
 @import "./components/products/productHeader.less";
+@import "./components/products/addProduct.less";
+@import "./components/products/updateProduct.less";
+@import "./components/products/productDetails.less";
+//Blog
+@import "./components/blog/blog.less";

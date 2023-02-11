@@ -1,34 +1,126 @@
-.product_details {
+.list_products {
     width: 100vw;
     max-width: 1600px;
-    height: 770px;
+    height: 825px;
+
+    .table_head {
+        padding: 0 20px 25px 20px;
+        .content {
+            align-items: center;
+            h2, p{
+                margin: 0;
+            }
+        }
+
+        .searchbox{
+            input{
+                width: 350px;
+                height: 35px;
+            }
+        }
+
+        .icon {}
+    }
 
     .product_table_card {
-        padding: 0 15px;
-        height: 700px;
+        padding: 10px 15px;
+        max-height: 710px;
         overflow: auto;
 
         table {
             width: 100%;
             border-collapse: separate;
-            border-spacing: 0 15px;
+            border-spacing: 0 8px;
 
-            tr {
-                margin: 3px 0;
-                background: var(--gradient-v3);
+            thead {
+                position: sticky;
+                z-index: 5;
+                top: -10px;
+                left: 0;
+                width: 100%;
 
-                th {
-                    padding: 15px;
-                    color: #eddada;
-                    font-weight: bold;
-                    font-size: 20px;
-                }
+                tr {
+                    margin-top: 0;
+                    background: var(--gradient-v3);
+                    border-radius: 10px;
 
-                td {
-                    padding: 15px;
-                    color: white;
+                    th {
+                        padding: 15px;
+                        color: #eddada;
+                        font-weight: bold;
+                        font-size: 20px;
+                        border-bottom: 2px solid tomato;
+                        
+                    }
                 }
             }
+
+            tbody {
+                tr {
+                    &:nth-child(even) {
+                        margin: 3px 0;
+                        background: var(--gradient-v3);
+                    }
+
+                    &:nth-child(odd) {
+                        margin: 3px 0;
+                        background: var(--gradient-v4);
+                    }
+
+                    td {
+                        padding: 15px;
+                        color: white;
+
+                        .actions {
+                            .dropbtn {
+                                background-color: rgba(0, 0, 0, 0.692);
+                                color: white;
+                                padding: 10px;
+                                border: none;
+                                border-radius: 10px;
+                            }
+
+                            .dropdown {
+                                position: relative;
+                                display: inline-block;
+
+                                .dropdown-content {
+                                    transform: scale(0);
+                                    position: absolute;
+                                    background-color: black;
+                                    min-width: 200px;
+                                    z-index: 1;
+                                    right: 35px;
+                                    border-radius: 10px;
+                                    top: 35px;
+
+                                    a {
+                                        color: var(--bs-white);
+                                        padding: 12px 16px;
+                                        display: block;
+                                        border-left: 0;
+                                        background-color: transparent;
+                                    }
+                                }
+
+                                &:hover {
+                                    .dropdown-content {
+                                        opacity: 1;
+                                        transform: scale(1);
+                                        z-index: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table_bottom{
+        padding: 25px 20px 0 20px;
+        p{
+            margin: 0;
         }
     }
 }

@@ -21,7 +21,7 @@ const Dashboard = () => {
                     {/* left side mid */}
                     <div className="box2 p-2"></div>
                     {/* left side bottom icon */}
-                    <div className="box3 p-2 d-flex justify-content-between">
+                    <div className="box3 p-2 d-flex flex-wrap justify-content-between">
                         <div className="short-box gradient_v1">
                             <i data-eva="message-square-outline" data-eva-fill="white" data-eva-height="40px" data-eva-width="40px"></i>
                             <div className='label'>Airoplane</div>
@@ -69,7 +69,18 @@ const Dashboard = () => {
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                     </Link>
-                    <a className="box gv_2 box-lg p-2"></a>
+                    <Link to="/blog" className="box gv_2 box-lg">
+                        <div className='box_icon'>
+                            <div className="notify_icon">
+                                499
+                            </div>
+                            <i data-eva="grid-outline" data-eva-fill="white" data-eva-height="50px" data-eva-width="50px"></i>
+                        </div>
+                        <div className="label">
+                            <h2>Blog</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </Link>
                     <a className="box gv_3 box-lg p-2"></a>
                     <a className="box gv_4 box-lg p-2"></a>
                     <a className="box gv_9 box-lg p-2"></a>

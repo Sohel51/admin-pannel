@@ -12,6 +12,7 @@
         .title {
             h2 {
                 font-weight: bold;
+                color: var(--bs-white);
             }
         }
 
@@ -35,8 +36,7 @@
     display: inline-block;
 
     .dropdown-content {
-        opacity: 0;
-        visibility: hidden;
+        transform: scale(0);
         position: absolute;
         backdrop-filter: blur(5px);
         // background-color: #05050534;
@@ -46,6 +46,7 @@
         border-radius: 10px;
         top: 65px;
         transition-duration: .5s;
+        z-index: 3;
 
         a {
             color: var(--bs-white);
@@ -96,7 +97,7 @@
     &:hover {
         .dropdown-content {
             opacity: 1;
-            visibility: visible;
+            transform: scale(1);
         }
 
         .dropbtn {

@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const ProductHeader = () => {
     return (
         <div className="product_heading_menu">
             <ul>
-                <li className='active'><Link to="">List Product</Link></li>
-                <li><Link to="">Add Product</Link></li>
-                <li><Link to="">Update Product</Link></li>
-                <li><Link to="">Product Details</Link></li>
+                <li><NavLink to="/products">List Product</NavLink></li>
+                <li><NavLink to="/addproduct">Add Product</NavLink></li>
+                <li><NavLink to="/updateproduct">Update Product</NavLink></li>
+                <li><NavLink to="/productdetails">Product Details</NavLink></li>
             </ul>
         </div>
     )
