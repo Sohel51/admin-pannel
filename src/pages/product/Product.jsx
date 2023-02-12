@@ -19,6 +19,7 @@ const Product = () => {
     setFakeData(FakeData)
   }, [])
 
+
   return (
     <>
       <div className="list_products">
@@ -56,10 +57,10 @@ const Product = () => {
                   </th>
                   <th>SN</th>
                   <th>Name</th>
-                  <th>Status</th>
-                  <th>Available</th>
-                  <th>Details</th>
-                  <th>Price</th>
+                  <th>Email</th>
+                  <th>Suite</th>
+                  <th>Phone</th>
+                  <th>Website</th>
                   <th>Action</th>
                 </tr>
               </thead>
@@ -73,10 +74,10 @@ const Product = () => {
                         </td>
                         <td>{data.id}</td>
                         <td>{data.name}</td>
-                        <td>{data.username}</td>
-                        <td>{data.address.zipcode}</td>
                         <td>{data.email}</td>
-                        <td>$100</td>
+                        <td>{data.address.suite}</td>
+                        <td>{data.phone}</td>
+                        <td>{data.website}</td>
                         <td>
                           <div className="actions">
                             <div className="dropdown">
@@ -114,10 +115,9 @@ const Product = () => {
           <div className={`my_canvus ${showcanvus && 'active'}`}>
             <div className="my_canvus_backdrop" onClick={() => setShowcanvus(false)}></div>
             <div className="my_canvus_body">
-              <input type="text" className='form-control' />
-              <input type="text" className='form-control' />
-              <input type="text" className='form-control' />
-              <input type="text" className='form-control' />
+              <h2>Heading</h2>
+              <p>Email</p>
+              <p>Suite</p>
             </div>
           </div>
           {/* table bottom */}
@@ -135,7 +135,6 @@ const Product = () => {
               </div>
             </div>
             <div className="limitation d-flex gap-3">
-              
               <p>Limit</p>
               <p>Total: <span>{fakeData.length}</span></p>
             </div>
