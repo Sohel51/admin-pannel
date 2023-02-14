@@ -581,6 +581,15 @@ body {
   height: 100%;
   position: absolute;
   right: 0;
+  padding: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+.my_canvus .my_canvus_body h2 {
+  font-size: 45px;
+}
+.my_canvus .my_canvus_body p {
+  font-size: 25px;
 }
 .product_heading_menu ul {
   display: flex;
@@ -610,8 +619,12 @@ body {
   height: 745px;
   overflow-y: auto;
 }
-.add_product .add_new_product form {
+.add_product .add_new_product form .data_field {
   justify-content: center;
+}
+.add_product .add_new_product form button {
+  border-radius: 5px;
+  font-size: 25px;
 }
 .update_product {
   width: 100vw;

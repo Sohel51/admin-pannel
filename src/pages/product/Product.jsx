@@ -8,6 +8,7 @@ const eva = require('eva-icons');
 const Product = () => {
   const [showcanvus, setShowcanvus] = useState(false)
   const [fakeData, setFakeData] = useState([])
+  const [getData, setGetData] = useState(null)
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,6 +19,11 @@ const Product = () => {
   useEffect(() => {
     setFakeData(FakeData)
   }, [])
+
+  const handleQuickView = (item) => {
+    setShowcanvus(true);
+    setGetData(item);
+  }
 
 
   return (
@@ -85,7 +91,7 @@ const Product = () => {
                                 <i data-eva="settings-outline" data-eva-fill="white" data-eva-height="25px" data-eva-width="25px"></i>
                               </button>
                               <div className="dropdown-content">
-                                <a className='d-flex gap-3 items' onClick={() => setShowcanvus(true)} href="#">
+                                <a className='d-flex gap-3 items' onClick={() => handleQuickView(data)} href="#">
                                   <i data-eva="eye-outline" data-eva-fill="white" data-eva-height="25px" data-eva-width="25px"></i>
                                   Quickview
                                 </a>
@@ -115,9 +121,17 @@ const Product = () => {
           <div className={`my_canvus ${showcanvus && 'active'}`}>
             <div className="my_canvus_backdrop" onClick={() => setShowcanvus(false)}></div>
             <div className="my_canvus_body">
-              <h2>Heading</h2>
-              <p>Email</p>
-              <p>Suite</p>
+              {getData
+                && (
+                  <span>
+                    <h2>ID: {getData.id}</h2>
+                    <h2>{getData.name}</h2>
+                    <p>{getData.email}</p>
+                    <p>{getData.address.city}</p>
+                    <p>{getData.phone}</p>
+                    <p>{getData.website}</p>
+                  </span>)
+              }
             </div>
           </div>
           {/* table bottom */}
