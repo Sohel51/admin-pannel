@@ -32,7 +32,7 @@ const AddProduct = () => {
                             <input type="text" />
                         </div>
                         <div className="product_name">
-                            <label>Personal Portfolio</label><br />
+                            <label> Portfolio</label><br />
                             <input type="text" />
                         </div>
                         <div className="product_name">
