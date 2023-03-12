@@ -20,7 +20,7 @@ const Blog = () => {
                 </div>
               </div>
               <div className="lebel">
-                <p>Purple</p>
+                <p>Purplee</p>
                 <p>2.5%</p>
               </div>
             </div>
